@@ -20,7 +20,7 @@ This is a learning project created as part of my journey to become proficient in
 
 ## Current Status
 
-🚧 **In Progress** - Actively learning and building out features as I progress through the course.
+**In Progress** - Actively learning and building out features as I progress through the course.
 
 ## Setup Instructions
 
