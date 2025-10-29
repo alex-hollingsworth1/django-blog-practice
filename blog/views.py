@@ -22,11 +22,8 @@ def post_detail(request, slug):
 
     return render(
         request,
-        "blog/post-detail.html",
-        {
-            "title": identified_post.title,
-            "img": identified_post.image_name,
-            "author": identified_post.author,
-            "content": identified_post.content,
-        },
+        "blog/post-detail.html", {
+            "post": identified_post,
+            "post_tags": identified_post.tags.all()
+        }
     )

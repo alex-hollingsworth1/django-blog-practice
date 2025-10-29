@@ -1,3 +1,4 @@
+"""Models for blog application."""
 from django.db import models
 from django.core.validators import MinLengthValidator
 
@@ -17,6 +18,7 @@ class Author(models.Model):
     email_address = models.EmailField()
 
     def full_name(self):
+        """Return full name of the author."""
         return f"{self.first_name} {self.last_name}"
 
     def __str__(self):
@@ -34,4 +36,4 @@ class Post(models.Model):
     author = models.ForeignKey(
         Author, on_delete=models.SET_NULL, null=True, related_name="posts"
     )
-    tag = models.OneToOneField(Tag, on_delete=models.SET_NULL, null=True)
+    tags = models.ManyToManyField(Tag)
