@@ -42,6 +42,9 @@ class Post(models.Model):
     )
     tags = models.ManyToManyField(Tag)
 
+    def __str__(self):
+        return f"{self.title}"
+
 
 class Comment(models.Model):
     """Comment model representing a comment on a blog post."""
