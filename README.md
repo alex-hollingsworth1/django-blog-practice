@@ -72,6 +72,10 @@ By completing this project, I aim to:
 - Style with CSS/Bootstrap
 - Deploy to a hosting platform
 
+##Security note 
+
+- Earlier commits included a hard-coded SECRET_KEY during learning. It’s now rotated and loaded from environment variables.
+
 ---
 
 *This is a practice project created for learning purposes as I work toward becoming employable in web development by Easter 2026.*
