@@ -8,12 +8,14 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "l1s5h%-io2b)u&4__&ms1g=x@b0v+!a!o2z6#sl!t$l45$ah^6"
+SECRET_KEY = "7w1wg33fff8^do0&drachsmn33-cehip!as)ka3mfa)#zy7$%8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]  # Temporary - allow all hosts
+ALLOWED_HOSTS = [
+    "django-blog-env.eba-vtp39gvh.eu-north-1.elasticbeanstalk.com"
+]
 
 # Application definition
 INSTALLED_APPS = [
