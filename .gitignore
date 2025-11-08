@@ -1,3 +1,8 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # Django stuff
 *.log
 *.pot
@@ -5,22 +10,38 @@
 __pycache__/
 db.sqlite3
 db.sqlite3-journal
+/staticfiles/
+/media/
+/uploads/
+local_settings.py
 
 # Virtual environment
 venv/
 env/
 ENV/
+django_my_site/
 
 # IDE stuff
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # Mac stuff
 .DS_Store
+Thumbs.db
 
 # Python
 *.py[cod]
 *$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
 
-# Environment variables
-.env
+# Elastic Beanstalk
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.ymlcode.zip
