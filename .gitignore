@@ -44,4 +44,5 @@ build/
 # Elastic Beanstalk
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.ymlcode.zip
+!.elasticbeanstalk/*.global.yml
+code.zip
